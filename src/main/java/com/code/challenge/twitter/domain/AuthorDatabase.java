@@ -87,7 +87,7 @@ class AuthorDatabase {
         jdbcTemplate.update("" +
                         "DELETE FROM favourite_author fa " +
                         "WHERE " +
-                        "fa.follower_id = ? or fa.followed_id = ?",
+                        "fa.follower_id = ? AND fa.followed_id = ?",
                 favouriteAuthor.getFollowerId().getUserId(), favouriteAuthor.getFollowedId().getUserId());
         return favouriteAuthor;
     }

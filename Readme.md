@@ -1,4 +1,4 @@
-## Prerequsities:
+## Prerequisities:
 1. JDK 11
 2. Maven 3.6
 3. Default port: 8080
